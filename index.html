@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KriPorang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white py-4 px-6 md:px-12 shadow-sm sticky top-0 z-50">
+        <div class="flex justify-between items-center">
+            
+            <div class="hidden md:flex space-x-8 text-gray-500 text-xs font-bold tracking-widest uppercase">
+                <a href="#" class="hover:text-green-600 transition">Beranda</a>
+                <a href="#about-us" class="hover:text-green-600 transition">Tentang Kita</a>
+                <a href="#our-product" class="hover:text-green-600 transition">Produk Kita</a>
+            </div>
+
+            <div class="flex-shrink-0">
+                <div class="text-2xl font-bold text-gray-800 italic font-serif">
+                    <img src="img/Kuning dan Merah Sederhana Makanan Logo.png" alt="Ladang Lima" class="h-12 md:h-20 object-contain">
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8 text-gray-500 text-xs font-bold tracking-widest uppercase">
+                <a href="#faq" class="hover:text-green-600 transition">FAQ</a>
+                
+                <a href="#our-product" class="bg-[#8DA157] hover:bg-green-700 text-white p-2 rounded-sm transition shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center gap-4">
+                <a href="#our-product" class="bg-[#8DA157] text-white p-2 rounded-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                </a>
+
+                <button id="mobile-menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden mt-4 border-t border-gray-100 pt-4 bg-white pb-4">
+            <div class="flex flex-col space-y-4 text-center font-bold text-gray-600 uppercase tracking-widest text-sm">
+                <a href="#" class="hover:text-[#8DA157] py-2">Beranda</a>
+                <a href="#about-us" class="hover:text-[#8DA157] py-2">Tentang Kita</a>
+                <a href="#our-product" class="hover:text-[#8DA157] py-2">Produk</a>
+                <a href="#faq" class="hover:text-[#8DA157] py-2">FAQ</a>
+                <a href="https://wa.me/6287835193546" class="text-[#8DA157] py-2">Kontak WA</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative w-full h-[85vh] bg-cover bg-center" style="background-image: url('img/WhatsApp\ Image\ 2025-11-21\ at\ 19.57.17.jpeg');">
+        
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div class="absolute inset-0 flex flex-col 
+                    justify-start pt-28 
+                    md:justify-center md:pt-0 
+                    items-center w-full md:w-1/2 md:left-auto md:right-0 
+                    p-6 z-10">
+            
+            <h1 class="text-white text-xl md:text-4xl lg:text-5xl font-light text-shadow mb-2 tracking-wider text-center">
+                Ngemil Tanpa Rasa Bersalah
+            </h1>
+            
+            <h2 class="text-white text-3xl md:text-6xl lg:text-7xl font-bold text-shadow text-center max-w-xl leading-tight">
+                Kebaikan Porang Madura
+            </h2>
+
+        </div>
+
+        <div class="absolute bottom-0 left-0 md:bottom-16 md:left-16 w-full md:w-[500px] bg-[#966F48] bg-opacity-95 p-6 md:p-8 text-white shadow-lg z-20">
+            <h3 class="font-bold text-lg md:text-xl mb-2">"Revolusi Kripik Porang: Renyah Sehat, Pedas Aromatik."</h3>
+            <p class="text-xs md:text-base leading-relaxed opacity-90">
+                Perpaduan inovatif composite chips Porang & Jagung Madura dengan bumbu rempah asli Cabe Jamu.
+                Bukan sekadar pedas, tapi pengalaman rasa yang berkelas <strong>"Cicipi Sekarang"</strong>
+            </p>
+        </div>
+
+    </div>
+
+        <div class="absolute bottom-0 left-0 md:bottom-16 md:left-16 w-full md:w-[500px] bg-[#966F48] bg-opacity-95 p-8 text-white shadow-lg">
+            <p class="text-sm md:text-base leading-relaxed opacity-90">
+                <strong class="block text-lg mb-1">Revolusi Kripik Porang: Renyah Sehat, Pedas Aromatik."</strong> 
+                Perpaduan inovatif composite chips Porang & Jagung Madura dengan bumbu rempah asli Cabe Jamu. Bukan sekadar pedas, tapi pengalaman rasa yang berkelas <span class="font-bold">"Cicipi Sekarang"</span>
+            </p>
+        </div>
+    </div>
+
+    <section  class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-[#F3EFEA] rounded-lg transform -rotate-2 transition group-hover:rotate-0"></div>
+                    <img src="img/WhatsApp Image 2025-11-21 at 20.01.10.jpeg" 
+                         alt="Cassava Flour Process" 
+                         class="relative rounded-lg shadow-xl w-full object-cover h-[400px] transform transition group-hover:scale-[1.01]">
+                </div>
+
+                <div>
+                    <h4 class="text-[#8DA157] font-bold tracking-widest uppercase text-sm mb-2">Cerita Kita</h4>
+                    <h2 class="text-4xl md:text-5xl font-serif text-gray-800 mb-6 leading-tight">
+                        Rempah Lokal, <br> <span class="text-[#966F48] italic">Kualitas Global.</span>
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+                        Cabe jamu (Piper retrofractum Vahl) adalah tanaman herba dan bahan obat asli Indonesia yang jumlahnya banyak dan tersebar di beberapa provinsi khususnya Jawa Timur. Kegunaan dari cabe jamu dapat digunakan sebagai obat tradisional dan sebagai bahan makanan, minuman, dan jamu.
+                    </p>
+                    <p class="text-gray-500 leading-relaxed mb-8">
+                       Kandungan yang terdapat pada cabe jamu diantaranya alkaloid, saponin, tanin, flavonoid, steroid, triferpenoid, glikosida, piperin, oleorisin, dan minyak atsiri. Jumlah piperin yang terkandung pada cabe jamu sekitar 4-6%.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-[#F9F7F2] rounded-3xl p-10 md:p-16 text-center">
+                <div class="max-w-3xl mx-auto mb-12">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Kenapa KriPorang?</h3>
+                    <p class="text-gray-500">Kebaikan alami yang kami jaga dalam setiap kemasan untuk kesehatan keluarga Anda.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                        <div class="w-14 h-14 bg-[#E8F0D6] rounded-full flex items-center justify-center mx-auto mb-6 text-[#8DA157]">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">100% Klop</h4>
+                        <p class="text-gray-500 text-sm">TJodoh Pas Buat Perutmu</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                        <div class="w-14 h-14 bg-[#EBE0D6] rounded-full flex items-center justify-center mx-auto mb-6 text-[#966F48]">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Tanpa Penyedap dan Perasa Buatan</h4>
+                        <p class="text-gray-500 text-sm">Diproses alami tanpa MSG dan Perasa Buatan.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition duration-300">
+                        <div class="w-14 h-14 bg-[#E8F0D6] rounded-full flex items-center justify-center mx-auto mb-6 text-[#8DA157]">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-2">Dukung Petani Lokal</h4>
+                        <p class="text-gray-500 text-sm">Memberdayakan petani Bahan Baku lokal di Madura,Jawa Timur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-product" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h4 class="text-[#8DA157] font-bold tracking-widest uppercase text-sm mb-2">Toko Online</h4>
+                    <h2 class="text-4xl md:text-5xl font-serif text-gray-800 font-bold">Varian Produk</h2>
+                </div>
+                <a href="#our-product" class="hidden md:inline-block text-[#966F48] font-semibold border-b border-[#966F48] pb-1 hover:text-[#7a5a3a] transition mt-4 md:mt-0">
+                    Lihat Semua Produk &rarr;
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden transition duration-300">
+                    <div class="absolute top-4 left-4 z-10 bg-[#8DA157] text-white text-xs font-bold px-3 py-1 rounded-full">
+                        Terlaris
+                    </div>
+                    
+                    <div class="h-72 bg-[#F9F7F2] flex items-center justify-center p-8 relative overflow-hidden">
+                        <img src="https://ladanglima.com/wp-content/uploads/2017/11/tepung-mocaf-1kg-ladang-lima-600x600.png" 
+                             alt="Mocaf Flour" 
+                             class="h-full object-contain transform group-hover:scale-110 transition duration-500">
+                        
+                        <button class="absolute bottom-4 translate-y-full group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-white text-gray-800 px-6 py-2 rounded-full shadow-md text-sm font-bold hover:bg-[#966F48] hover:text-white">
+                            Pratinjau Cepat
+                        </button>
+                    </div>
+
+                    <div class="p-6">
+                        <p class="text-gray-400 text-xs font-bold uppercase mb-1">KriPorang Original</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#966F48] transition">Cabe Jamu</h3>
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">Tepung Porang dan Jagung yang diolah menjadi keripik,dengan Bumbu Cabe Jamu</p>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-[#966F48]">Rp 15.000</span>
+                            <button class="p-3 bg-[#F3EFEA] text-[#966F48] rounded-full hover:bg-[#966F48] hover:text-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                            
+                            <a href="https://wa.me/6287835193546" target="_blank" 
+                               class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-green-600 text-white py-2.5 px-3 rounded-lg text-sm font-bold transition shadow-sm group-hover:shadow-md">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                Order WA
+                            </a>
+
+                            <a href="https://ig.me/m/kriporang" target="_blank"
+                               class="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 text-white py-2.5 px-3 rounded-lg text-sm font-bold transition shadow-sm group-hover:shadow-md">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                DM IG
+                            </a>
+                        </div>
+                </div>
+
+                <div class="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden transition duration-300">
+                    <div class="h-72 bg-[#F9F7F2] flex items-center justify-center p-8 relative overflow-hidden">
+                        <img src="https://ladanglima.com/wp-content/uploads/2020/01/Blackthins-Pouch-Packaging-600x600.png" 
+                             alt="Blackthins Cookies" 
+                             class="h-full object-contain transform group-hover:scale-110 transition duration-500">
+                        <button class="absolute bottom-4 translate-y-full group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-white text-gray-800 px-6 py-2 rounded-full shadow-md text-sm font-bold hover:bg-[#966F48] hover:text-white">
+                            Pratinjau Cepat
+                        </button>
+                    </div>
+
+                    <div class="p-6">
+                        <p class="text-gray-400 text-xs font-bold uppercase mb-1">KriPorang Serai</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#966F48] transition">Cabe Jamu + Serai</h3>
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">Versi Lain dari Original,namun tambahan aromatik dari Serai</p>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-[#966F48]">Rp 15.000</span>
+                            <button class="p-3 bg-[#F3EFEA] text-[#966F48] rounded-full hover:bg-[#966F48] hover:text-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                            
+                            <a href="https://wa.me/6287835193546" target="_blank" 
+                               class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-green-600 text-white py-2.5 px-3 rounded-lg text-sm font-bold transition shadow-sm group-hover:shadow-md">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                Order WA
+                            </a>
+
+                            <a href="https://ig.me/m/kriporang" target="_blank"
+                               class="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 text-white py-2.5 px-3 rounded-lg text-sm font-bold transition shadow-sm group-hover:shadow-md">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                DM IG
+                            </a>
+                        </div>
+                </div>
+
+                <div class="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden transition duration-300">
+                     <div class="absolute top-4 left-4 z-10 bg-[#966F48] text-white text-xs font-bold px-3 py-1 rounded-full">
+                        Baru
+                    </div>
+                    <div class="h-72 bg-[#F9F7F2] flex items-center justify-center p-8 relative overflow-hidden">
+                        <img src="https://ladanglima.com/wp-content/uploads/2019/08/Veggie-Noodle-Kale-600x600.png" 
+                             alt="Veggie Noodle" 
+                             class="h-full object-contain transform group-hover:scale-110 transition duration-500">
+                        <button class="absolute bottom-4 translate-y-full group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-white text-gray-800 px-6 py-2 rounded-full shadow-md text-sm font-bold hover:bg-[#966F48] hover:text-white">
+                            Pratinjau Cepat
+                        </button>
+                    </div>
+
+                    <div class="p-6">
+                        <p class="text-gray-400 text-xs font-bold uppercase mb-1">Kriporang Daun Jeruk</p>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-[#966F48] transition">Cabe Jamu + Daun Jeruk</h3>
+                        <p class="text-sm text-gray-500 mb-4 line-clamp-2">Adapun Versi Lain dari Original,dengan Aromatik Khas Daun Jeruk</p>
+                        
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-[#966F48]">Rp 15.000</span>
+                            <button class="p-3 bg-[#F3EFEA] text-[#966F48] rounded-full hover:bg-[#966F48] hover:text-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                            
+                            <a href="https://wa.me/6287835193546" target="_blank" 
+                               class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-green-600 text-white py-2.5 px-3 rounded-lg text-sm font-bold transition shadow-sm group-hover:shadow-md">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                Order WA
+                            </a>
+
+                            <a href="https://ig.me/m/kriporang" target="_blank"
+                               class="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-90 text-white py-2.5 px-3 rounded-lg text-sm font-bold transition shadow-sm group-hover:shadow-md">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                DM IG
+                            </a>
+                        </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-10 text-center md:hidden">
+                 <a href="#our-product" class="inline-block px-8 py-3 border border-[#966F48] text-[#966F48] font-bold rounded hover:bg-[#966F48] hover:text-white transition">
+                    Lihat Semua Produk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="py-20 bg-[#F9F7F2]"> <div class="max-w-7xl mx-auto px-6 md:px-12">
+            
+            <div class="text-center mb-16">
+                <h4 class="text-[#966F48] font-bold tracking-widest uppercase text-sm mb-2">Anggota Tim</h4>
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 font-bold">Temui Tim Kita</h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+                    Orang-orang berdedikasi di balik kualitas terbaik produk kami.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+                    <div class="relative h-80 overflow-hidden bg-gray-200">
+                        <img src="img/WhatsApp Image 2025-11-21 at 22.35.45.jpeg" 
+                             alt="Member 1" 
+                             class="w-full h-full object-cover object-top transform group-hover:scale-110 transition duration-700">
+                        
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center space-x-4">
+                            <a href="#" class="bg-white p-2 rounded-full text-gray-800 hover:text-[#8DA157]">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg text-gray-800">M. Rikza Fiqih Yuliansyah</h3>
+                        <p class="text-[#8DA157] text-sm font-semibold uppercase tracking-wider mt-1">Ketua Tim</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+                    <div class="relative h-80 overflow-hidden bg-gray-200">
+                        <img src="img/WhatsApp Image 2025-11-21 at 23.21.14.jpeg" 
+                             alt="Member 2" 
+                             class="w-full h-full object-cover object-top transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg text-gray-800">Abdul Wahab</h3>
+                        <p class="text-[#8DA157] text-sm font-semibold uppercase tracking-wider mt-1">Anggota 1</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+                    <div class="relative h-80 overflow-hidden bg-gray-200">
+                        <img src="img/WhatsApp Image 2025-11-01 at 19.00.59_3770392a.jpg" 
+                             alt="Member 3" 
+                             class="w-full h-full object-cover object-top transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg text-gray-800">Ach. Faisal Al Farizy</h3>
+                        <p class="text-[#8DA157] text-sm font-semibold uppercase tracking-wider mt-1">Anggota 2</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group">
+                    <div class="relative h-80 overflow-hidden bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop" 
+                             alt="Member 4" 
+                             class="w-full h-full object-cover object-top transform group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg text-gray-800">Jessica Fernanda Audrelya</h3>
+                        <p class="text-[#8DA157] text-sm font-semibold uppercase tracking-wider mt-1">Anggota 3</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-24 bg-[#F9F7F2]">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            
+            <div class="text-center mb-16">
+                <h4 class="text-[#8DA157] font-bold tracking-widest uppercase text-sm mb-2">Pusat Bantuan</h4>
+                <h2 class="text-3xl md:text-4xl font-serif text-gray-800 font-bold">Pertanyaan Umum</h2>
+                <p class="text-gray-500 mt-4">
+                    Hal-hal yang sering ditanyakan seputar Kripik Porang Madura.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-800 hover:text-[#966F48] transition">
+                        <span>Apa itu Kripik Porang Madura?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 leading-relaxed">
+                        KriPorang adalah inovasi composite chips yang memadukan kebaikan Umbi Porang dan Jagung Madura. Berbeda dari kripik biasa, kami menggunakan bumbu rempah asli (Cabe Jamu, Serai, dan Daun Jeruk) tanpa penguat rasa sintetik. Hasilnya? Kripik yang renyah, wangi aromatik, dan terasa ringan saat dinikmati"
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-800 hover:text-[#966F48] transition">
+                        <span>Apakah produk ini aman untuk penderita diabetes?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 leading-relaxed">
+                        "KriPorang terbuat dari bahan dasar Umbi Porang, yang secara literatur pangan dikenal memiliki Indeks Glikemik (IG) yang lebih rendah dibandingkan tepung olahan lain. Kami juga tidak menggunakan pemanis buatan berlebih. Namun, karena kondisi kesehatan setiap orang berbeda, kami tetap menyarankan untuk berkonsultasi dengan ahli gizi Anda"
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-800 hover:text-[#966F48] transition">
+                        <span>Berapa lama masa kadaluarsanya?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 leading-relaxed">
+                        "Karena kami berkomitmen pada bahan alami tanpa pengawet kimia, kami merekomendasikan periode 'Best Before' (Baik Dikonsumsi) dalam 3-4 bulan produksi untuk rasa rempah dan kerenyahan terbaik. Namun, dengan penyimpanan yang tepat, produk dapat bertahan lebih lama"
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-gray-800 hover:text-[#966F48] transition">
+                        <span>Bagaimana cara pengiriman ke luar kota?</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 leading-relaxed">
+                       "Kami melayani pengiriman ke seluruh Indonesia melalui mitra logistik terpercaya (JNE, J&T, SiCepat). Prioritas kami adalah keutuhan produk: setiap paket sudah termasuk Standar Packing Aman (Bubble Wrap Tebal + Kardus Kokoh) untuk meminimalisir risiko remuk, sehingga KriPorang sampai di tanganmu dalam kondisi prima"
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Ambil elemen tombol dan menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        // Pas tombol diklik, jalankan fungsi ini
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden'); // Munculin atau sembunyiin class 'hidden'
+        });
+    </script>
+
+</body>
+</html>
